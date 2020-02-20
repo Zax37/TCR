@@ -1,6 +1,11 @@
 .intro {
-  position: relative;
+  display: table;
+  width: 100%;
   min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  position: relative;
   overflow: hidden;
 }
 .intro::before {
@@ -20,6 +25,9 @@
   animation: zoom 120s infinite;
 }
 .intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 120px 0;
   animation: 2s fadeIn;
   animation-fill-mode: forwards;
   visibility: hidden;
@@ -27,6 +35,18 @@
 .intro .intro-body .brand-heading img {
   width: 100%;
   max-width: 600px;
+}
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .intro .intro-body .intro-text {
+    font-size: 24px;
+  }
+}
+.intro .intro-body .links img {
+  width: 72px;
+  height: 72px;
 }
 @-webkit-keyframes zoom {
   0%,

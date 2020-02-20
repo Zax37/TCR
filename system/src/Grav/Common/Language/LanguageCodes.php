@@ -162,7 +162,7 @@ class LanguageCodes
         }
 
         if (preg_match('/[a-zA-Z]{2}-[a-zA-Z]{2}/', $code)) {
-            return static::get(substr($code, 0, 2), 'nativeName') . ' (' . substr($code, -2) . ')';
+            return static::get(substr($code, 0, 2), 'nativeName'); //. ' (' . substr($code, -2) . ')';
         }
 
         return $code;

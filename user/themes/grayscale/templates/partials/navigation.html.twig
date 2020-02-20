@@ -27,6 +27,9 @@
                     {% endif %}
                         <li><a class="page-scroll" href="{{ domain }}{{ link.url }}" {% if link.url | contains('http') %}target="_blank"{% endif %}>{{ link.title }}</a></li>
                 {% endfor %}
+                <li>
+                {% include 'partials/language-selector.html.twig' %}
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

@@ -1,0 +1,33 @@
+.language-selector {
+    background-color: rgba(0, 0, 0, .5);
+    background-clip: padding-box;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.language-selector img {
+    width: 24px;
+    height: 12px;
+    max-width: inherit;
+}
+
+.language-selector > li > a {
+    line-height: 1rem;
+    color: #c0c0c0;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.language-selector > li:hover {
+    background-color: rgba(70, 70, 70, .6);
+}
+
+.language-selector > li > a {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+}

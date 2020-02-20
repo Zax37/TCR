@@ -18,6 +18,9 @@ desktop.ini
 .idea
 
 # Grav
+backup
 bin
 cache
+images
 logs
+tmp

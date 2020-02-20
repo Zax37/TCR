@@ -11,14 +11,24 @@ username_regex: '^[a-z0-9_-]{3,16}$'
 pwd_regex: '(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'
 intl_enabled: true
 languages:
-  supported: null
+  supported:
+    - ar
+    - cs
+    - en
+    - es
+    - it
+    - hu
+    - pl
+    - pt-pt
+    - ro
+    - ru
   default_lang: null
   include_default_lang: true
   pages_fallback_only: false
   translations: true
   translations_fallback: true
-  session_store_active: false
-  http_accept_language: false
+  session_store_active: true
+  http_accept_language: true
   override_locale: false
 home:
   alias: /home
@@ -44,7 +54,7 @@ pages:
     page: true
     twig: true
   markdown:
-    extra: false
+    extra: true
     auto_line_breaks: false
     auto_url_links: false
     escape_markup: false
