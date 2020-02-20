@@ -33,7 +33,7 @@ mb_internal_encoding('UTF-8');
 // Ensure vendor libraries exist
 $autoload = __DIR__ . '/vendor/autoload.php';
 if (!is_file($autoload)) {
-    die('Please run: <i>bin/grav install</i>');
+    die('Please run: <i>composer update</i>');
 }
 
 // Register the auto-loader.
