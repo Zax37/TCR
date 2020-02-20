@@ -1,0 +1,65 @@
+.intro {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.intro::before {
+  content: "";
+  background-image: url("../img/intro-bg.jpg");
+  opacity: 0.45;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-animation: zoom 120s infinite;
+  animation: zoom 120s infinite;
+}
+.intro .intro-body {
+  animation: 2s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+.intro .intro-body .brand-heading img {
+  width: 100%;
+  max-width: 600px;
+}
+@-webkit-keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+@keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}

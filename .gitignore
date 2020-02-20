@@ -13,3 +13,11 @@ desktop.ini
 # Composer
 /composer.phar
 /vendor
+
+# WebStorm
+.idea
+
+# Grav
+bin
+cache
+logs

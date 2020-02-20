@@ -1,0 +1,46 @@
+title: The Claw Recluse                     # Name of the site
+default_lang: en                            # Default language for site (potentially used by theme)
+
+author:
+  name: Zachariasz 'Zax37' Zacharski        # Default author name
+  email: 'c37zax@gmail.com'                 # Default author email
+
+taxonomies: [category,tag]                  # Arbitrary list of taxonomy types
+
+metadata:
+  description: 'The largest Claw game community website.'  # Site description
+
+summary:
+  enabled: true                             # enable or disable summary of page
+  format: short                             # long = summary delimiter will be ignored; short = use the first occurrence of delimiter or size
+  size: 300                                 # Maximum length of summary (characters)
+  delimiter: ===                            # The summary delimiter
+
+redirects:
+#  '/redirect-test': '/'                    # Redirect test goes to home page
+#  '/old/(.*)': '/new/$1'                   # Would redirect /old/my-page to /new/my-page
+
+routes:
+#  '/something/else': '/blog/sample-3'      # Alias for /blog/sample-3
+#  '/new/(.*)': '/blog/$1'                  # Regex any /new/my-page URL to /blog/my-page Route
+
+blog:
+  route: '/blog'                            # Custom value added (accessible via system.blog.route)
+
+#menu:                                      # Menu Example
+#    - text: Source
+#      icon: github
+#      url: https://github.com/getgrav/grav
+#    - icon: twitter
+#      url: http://twitter.com/getgrav
+
+# Links to include in navigation
+# For external links add external: true
+links:
+  - title: About
+    url: '#about'
+  - title: Download
+    url: '#download'
+  - title: Contact
+    url: '#contact'
+
