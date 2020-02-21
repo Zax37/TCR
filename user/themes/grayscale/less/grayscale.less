@@ -60,24 +60,29 @@ a {
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: black;
+
     .navbar-brand {
+        margin-left: 24px;
         font-weight: 700;
         &:focus {
             outline: none;
         }
-        .navbar-toggle {
-            padding: 4px 6px;
-            font-size: 16px;
-            color: white;
-            &:focus,
-            &:active {
-                outline: none;
-            }
+    }
+
+    .navbar-toggle {
+        padding: 4px 6px;
+        font-size: 16px;
+        color: white;
+        &:focus,
+        &:active {
+            outline: none;
         }
     }
+
     a {
         color: white;
     }
+
     .nav {
         li {
             a {
@@ -95,17 +100,23 @@ a {
                     background-color: transparent;
                 }
             }
+
             &.active {
                 outline: none;
                 a {
-                    background-color: fade(white, 30%);
+                    background-color: @primary;
                     &:hover {
                         color: white;
                     }
                 }
             }
+
+            &:last-of-type {
+                margin-right: 32px;
+            }
         }
     }
+
     @media(min-width:768px) {
         padding: 20px 0;
         border-bottom: none;
@@ -114,10 +125,11 @@ a {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+
         &.top-nav-collapse {
             padding: 0;
             background: black;
-            border-bottom: 1px solid fade(white, 30%);
+            border-bottom: 1px solid @primary;
         }
     }
 }
@@ -196,28 +208,18 @@ a {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 0;
+
+    > div {
+        padding: 200px 0;
+    }
 }
 
 .download-section {
     width: 100%;
     padding: 50px 0;
     color: white;
-    background: black url(../img/downloads-bg.jpg) no-repeat scroll center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
+    background: @primary;
 }
 
 .btn {

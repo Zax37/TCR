@@ -34,7 +34,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: #660000;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -42,7 +42,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #000000;
 }
 .light {
   font-weight: 400;
@@ -55,18 +55,19 @@ a:focus {
   background-color: black;
 }
 .navbar-custom .navbar-brand {
+  margin-left: 24px;
   font-weight: 700;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
 }
-.navbar-custom .navbar-brand .navbar-toggle {
+.navbar-custom .navbar-toggle {
   padding: 4px 6px;
   font-size: 16px;
   color: white;
 }
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
   outline: none;
 }
 .navbar-custom a {
@@ -91,10 +92,13 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #660000;
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
+}
+.navbar-custom .nav li:last-of-type {
+  margin-right: 32px;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -109,7 +113,7 @@ a:focus {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: black;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #660000;
   }
 }
 .btn-circle {
@@ -177,25 +181,16 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 100px;
+  padding-top: 0;
+}
+.content-section > div {
+  padding: 200px 0;
 }
 .download-section {
   width: 100%;
   padding: 50px 0;
   color: white;
-  background: black url(../img/downloads-bg.jpg) no-repeat scroll center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-@media (min-width: 767px) {
-  .content-section {
-    padding-top: 250px;
-  }
-  .download-section {
-    padding: 100px 0;
-  }
+  background: #660000;
 }
 .btn {
   text-transform: uppercase;
@@ -207,16 +202,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #660000;
+  color: #660000;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid #660000;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color: #660000;
 }
 ul.banner-social-buttons {
   margin-top: 0;
