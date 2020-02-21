@@ -181,7 +181,8 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 0;
+  padding-top: 50px;
+  min-height: 100vh;
 }
 .content-section > div {
   padding: 200px 0;
