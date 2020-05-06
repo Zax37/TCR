@@ -1,5 +1,6 @@
 @import "variables.less";
 @import "mixins.less";
+@import "fonts.less";
 
 body {
     width: 100%;
@@ -86,6 +87,8 @@ a {
     .nav {
         li {
             a {
+                background-color: transparent;
+                border-color: transparent;
                 -webkit-transition: background .3s ease-in-out;
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
@@ -113,6 +116,12 @@ a {
 
             &:last-of-type {
                 margin-right: 32px;
+            }
+
+            &.open {
+                .fa-caret-down:before {
+                    content: "\f0d8";
+                }
             }
         }
     }
@@ -212,7 +221,7 @@ a {
     min-height: 100vh;
 
     > div {
-        padding: 200px 0;
+        padding: 100px 0;
     }
 }
 
@@ -226,7 +235,7 @@ a {
 .btn {
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -234,15 +243,15 @@ a {
 }
 
 .btn-default {
-    border: 1px solid @primary;
-    color: @primary;
+    border: 1px solid @links;
+    color: @links;
     background-color: transparent;
     &:hover,
     &:focus {
-        border: 1px solid @primary;
+        border: 1px solid @links;
         outline: none;
         color: black;
-        background-color: @primary;
+        background-color: @links;
     }
 }
 

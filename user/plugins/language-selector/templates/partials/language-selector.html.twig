@@ -1,4 +1,4 @@
-<a href="#" data-dropdown="langSelectorList">
+<a href="#" onclick="return false;" id="langSelectorList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 {% if language_display.button == 'default' or language_display.button == 'flag' %}
     <img alt="{{ native_name(language_selector.current)|capitalize }}" src="{{ path_flags ~ language_selector.current }}.png" />
 {% endif %}
@@ -8,7 +8,7 @@
 <i class="fa fa-caret-down"></i>
 </a>
 
-<ul class="language-selector dropdown-menu" id="langSelectorList">
+<ul class="language-selector dropdown-menu" aria-labelledby="langSelectorList">
 {% for language in language_selector.languages %}
 
     {% set show_language = true %}

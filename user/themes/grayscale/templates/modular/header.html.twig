@@ -5,7 +5,8 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h1 class="brand-heading"><img alt="The Claw Recluse" title="The Claw Recluse" src="{{ theme_url }}/img/logo.png"/></h1>
-                    <p class="intro-text">{{ page.content }}</p>
+                    {{ dump(site.description) }}
+                    <p class="intro-text">{{ page.metadata.description.content | t }}</p>
                     <div class="links">
                         {% for name, link in page.header.links %}
                             <a href="{{link.href}}" class="{{name}}" title="{{link.title}}"><img src="{{ theme_url }}/img/{{name}}.png"/></a>

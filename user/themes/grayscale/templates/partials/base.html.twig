@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ grav.language.getLanguage }}">
 
 <head>
   {% block head %}
@@ -20,7 +20,6 @@
     <!-- Custom Fonts -->
     {% do assets.addCss('theme://css/font-awesome/css/font-awesome.min.css',100) %}
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	{% do assets.addCss('theme://css/index.css',100) %}
     {% endblock %}
     {{ assets.css() }}

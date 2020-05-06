@@ -1,5 +1,4 @@
 ---
-title: Welcome
 links:
     facebook:
         href: https://www.facebook.com/Claw-291516695407/
@@ -10,6 +9,5 @@ links:
     claw:
         href: #
         title: Download Claw
+hidemenu: true
 ---
-
-The biggest Claw community website on the Internet.

@@ -17,16 +17,16 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
-                {% for link in site.links %}
-                    {% if link.url | contains('http') %}
-                        {% set domain = '' %}
-                    {% elseif link.url | contains('#') %}
-                        {% set domain = '' %}
-                    {% else %}
-                        {% set domain = base_url_absolute %}
+
+                {% for module in page.collection() %}
+                    {% if not module.header.hidemenu %}
+                        {% set current_page = (module.active or module.activeChild) ? 'current' : '' %}
+                        <li class="{{ current_module }}">
+                            <a class="page-scroll" href="#{{ module.slug | slice(1) }}">{{ module.menu }}</a>
+                        </li>
                     {% endif %}
-                        <li><a class="page-scroll" href="{{ domain }}{{ link.url }}" {% if link.url | contains('http') %}target="_blank"{% endif %}>{{ link.title }}</a></li>
                 {% endfor %}
+
                 <li>
                 {% include 'partials/language-selector.html.twig' %}
                 </li>

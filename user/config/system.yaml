@@ -146,7 +146,7 @@ log:
   syslog:
     facility: local6
 debugger:
-  enabled: false
+  enabled: true
   shutdown:
     close_connection: true
 images:

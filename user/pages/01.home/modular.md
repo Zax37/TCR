@@ -1,5 +1,4 @@
 ---
-title: Homepage
 content:
     items: '@self.modular'
     order:
